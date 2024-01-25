@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory Data Masjid</title>
+    <link rel="shortcut icon" href="../assets/img/logo.png" />
+    <!-- <link rel="stylesheet" href="../assets/css/style.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- aos js css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .bg-color-primary {
+        background-color: #a85007;
+      }
+      .bg-color-primary:hover {
+        background-color: #1d1d1d;
+      }
+      .text-c-primary {
+        color: #a85007;
+      }
+      .card {
+        border-bottom: 5px solid #ed8434;
+        margin-bottom: 10px;
+      }
+      .card:hover {
+        background-color: #ed8434;
+        transition: 0.3s;
+        color: white;
+      }
+      .img-card {
+        height: 300px;
+        object-fit: cover;
+      }
+      li a:hover {
+        background-color: #a85007;
+        border-radius: 25px;
+      }
+      .nav-link:hover {
+        color: white;
+      }
+      .nav-item {
+        margin-inline: 5px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img src="../assets/img/logo.png" alt="logo" width="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#berita">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#data">Data Masjid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrasi.html">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pengelola.html"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item px-4 rounded-pill bg-color-primary">
+              <a class="nav-link text-white" href="../admin/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
+            <h1 class="text-c-primary">
+              Form Pendaftaran Masjid Kota
+              <span class="text-c-primary">Depok</span>
+            </h1>
+          </div>
+          <div class="col-md-6 text-end">
+            <img
+              src="../assets/img/logo.png"
+              width="350px"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <img />
+          </div>
+        </div>
+      </section>
+
+
+      <!-- content pendaftaran -->
+      <section>
+        <h2 class="text-c-primary text-center my-3" id="data">Pendaftaran Masjid</h2>
+        <div class="mb-3">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn bg-color-primary text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#uploadMasjid"
+          >
+            Upload Foto Masjid
+          </button>
+          <button
+            type="button"
+            class="btn bg-color-primary text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#registMasjid"
+          >
+            Registrasi Masjid
+          </button>
+
+          <!-- Modal Regist Masjid -->
+          <div
+            class="modal fade"
+            id="registMasjid"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Registrasi Masjid
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Nama Masjid</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Kecamatan</label>
+                      <select name="" class="form-select">
+                        <option value="">Kecamatan 1</option>
+                        <option value="">Kecamatan 2</option>
+                        <option value="">Kecamatan 3</option>
+                        <option value="">Kecamatan 4</option>
+                        <option value="">Kecamatan 5</option>
+                        <option value="">Kecamatan 6</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Kelurahan</label>
+                      <select name="" class="form-select">
+                        <option value="">Kelurahan 1</option>
+                        <option value="">Kelurahan 2</option>
+                        <option value="">Kelurahan 3</option>
+                        <option value="">Kelurahan 4</option>
+                        <option value="">Kelurahan 5</option>
+                        <option value="">Kelurahan 6</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="">Deskripsi Fasilitas</label>
+                      <textarea
+                        class="form-control"
+                        style="height: 100px"
+                      ></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Nama Pengurus DKM</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">No Handphone</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Email</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Alamat Web</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Alamat Lengkap</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Latitude, Longitude</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg-color-primary text-white">
+                        Daftar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Upload Masjid -->
+          <div
+            class="modal fade"
+            id="uploadMasjid"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Upload Foto Masjid
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Nama Masjid</label>
+                      <select name="" class="form-select">
+                        <option value="">Majid NF</option>
+                        <option value="">Majid Istiqlal</option>
+                        <option value="">Majid At-Thohir</option>
+                        <option value="">Majid Kubah Mas</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Judul foto</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="">Keterangan Foto</label>
+                      <textarea
+                        class="form-control"
+                        style="height: 100px"
+                      ></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Upload Foto</label>
+                      <input type="file" class="form-control" />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg-color-primary text-white">
+                        Upload
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-2" data-aos="fade-down" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="../assets/img/kubah mas.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Tampak Depan dan Belakang Masjid
+                    </h3>
+                    <p class="card-text">
+                      Ini adalah tampak depan dan belakang masjid.
+                    </p>
+                    <a
+                      href=""
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-2" data-aos="fade-right" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="../assets/img/Tampak Depan.jpg"
+                    class="img-fluid rounded-start img-card"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Tampak Depan Masjid
+                    </h3>
+                    <p class="card-text">
+                      Ini adalah tampilan tampak depan masjid
+                    </p>
+                    <a
+                      href=""
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2" data-aos="fade-left" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="../assets/img/Tampak belakang.jpg"
+                    class="img-fluid rounded-start img-card"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Tampak Belakang Masjid
+                    </h3>
+                    <p class="card-text">
+                      Ini adalah tampilan tampak belakang masjid
+                    </p>
+                    <a
+                      href=""
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-color-primary p-2 mt-5 text-center">
+      <small class="text-white"
+        >&#169; Copyright by Data Directory Masjid Kota Depok - 2024.</small
+      >
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos js js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

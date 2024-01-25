@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory Data Masjid</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- aos js css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .bg-color-primary {
+        background-color: #a85007;
+      }
+      .bg-color-primary:hover {
+        background-color: #1d1d1d;
+      }
+      .text-c-primary {
+        color: #a85007;
+      }
+      .card {
+        height: 540px;
+        border-bottom: 5px solid #ed8434;
+        margin-bottom: 10px;
+      }
+      .card:hover {
+        background-color: #ed8434;
+        transition: 0.3s;
+        color: white;
+      }
+      .img-card {
+        height: 300px;
+        object-fit: cover;
+      }
+      li a:hover {
+        background-color: #a85007;
+        border-radius: 25px;
+      }
+      .nav-link:hover {
+        color: white;
+      }
+      .nav-item {
+        margin-inline: 5px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="frontend/data_masjid.html">
+          <img src="assets/img/logo.png" alt="logo" width="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#berita">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#data">Data Masjid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="frontend/registrasi.html">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="frontend/pengelola.html"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item px-4 rounded-pill bg-color-primary">
+              <a class="nav-link text-white" href="admin/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
+            <h1 class="text-c-primary">
+              Directory Data Masjid Kota
+              <span class="text-c-primary">Depok</span>
+            </h1>
+            <span class="fs-4 fst-italic"
+              >Data Masjid dan Berita Kota Depok</span
+            >
+          </div>
+          <div class="col-md-6 text-end">
+            <img
+              src="assets/img/logo.png"
+              width="350px"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <img />
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Berita -->
+      <section class="my-5">
+        <h2 class="text-c-primary text-center my-3" id="berita">
+          Berita Seputar Kegiatan Masjid
+        </h2>
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card">
+              <img
+                src="assets/img/1.jpg"
+                class="card-img-top"
+                height="200"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center text-c-primary fw-bold">
+                  Berita-1
+                </h5>
+                <p class="card-text">
+                  Salah satu yang paling terkenal adalah Masjid Dian Al Mahri
+                  yang dibangun pada 2001 dan selesai pada 2006. Masjid Dian Al
+                  Mahri dengan luas 8.000 meter persegi berdiri di lahan seluas
+                  70 hektar, membuatnya menjadi masjid dengan lahan terluas di
+                  Jabodetabek. Masjid Dian Al-Mahri atau yang lebih dikenal
+                  dengan Masjid Kubah Emas depok.
+                </p>
+                <a href="frontend/data_masjid.html" class="btn bg-color-primary w-100 text-white"
+                  >Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card">
+              <img
+                src="assets/img/masjid at thohir.webp"
+                class="card-img-top"
+                height="200"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center text-c-primary fw-bold">
+                  Berita-2
+                </h5>
+                <p class="card-text">
+                  Masjid At-Thohir baru diresmikan Presiden Joko Widodo (Jokowi)
+                  pada Rabu 9 Maret 2022. Masjid yang berlokasi di Jalan Hj.
+                  Mohammad Thohir, kawasan Kompleks Podomoro, Tapos, Kota Depok
+                  merupakan dedikasi Menteri BUMN Erick Thohir untuk sang ayah..
+                </p>
+                <a href="frontend/data_masjid.html" class="btn bg-color-primary w-100 text-white"
+                  >Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card">
+              <img
+                src="assets/img/1.jpg"
+                class="card-img-top"
+                height="200"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center text-c-primary fw-bold">
+                  Berita-3
+                </h5>
+                <p class="card-text">
+                  Masjid Agung Korps Brimob masjid yang di bangun di markas
+                  brimob ini yang beralamat di Jalan Komjen. Pol. M. Jasin,
+                  Pasir Gunung Selatan, Cimanggis, Pasir Gn. Sel., Depok, Kota
+                  Depok, Jawa Barat 16451, Indonesia.. Anda dapat merujuk ke
+                  beberapa komentar di bawah ini sebelum datang ke tempat ini.
+                  Ada 26009 alamat terkait di sekitar Masjid Agung Korps Brimob
+                </p>
+                <a href="frontend/data_masjid.html" class="btn bg-color-primary w-100 text-white"
+                  >Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- content data masjid -->
+      <section>
+        <h2 class="text-c-primary text-center my-3" id="data">Data Masjid</h2>
+        <div class="row">
+          <div class="col-md-12 mb-2" data-aos="fade-down" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/img/1.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Masjid Korps Brimob Depok
+                    </h3>
+                    <p class="card-text">
+                      Masjid yang berlokasi di Jalan Komjen. Pol. M. Jasin,
+                      Pasir Gunung Selatan, Cimanggis, Pasir Gn. Sel., Depok,
+                      Kota Depok, Jawa Barat 16451, Sangat Membantu Umat Islam
+                      dalam beribadah
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                    <a
+                      href="frontend/data_masjid.html"
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-2" data-aos="fade-right" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/img/kubah mas 2.webp"
+                    class="img-fluid rounded-start img-card"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Masjid Kubah Mas Depok
+                    </h3>
+                    <p class="card-text">
+                      Masjid Dian Al-Mahri atau yang lebih dikenal dengan Masjid
+                      Kubah Emas adalah sebuah kompleks masjid terbesar yang
+                      berada di Kota Depok, Provinsi Jawa Barat, Indonesia
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                    <a
+                      href="frontend/data_masjid.html"
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2" data-aos="fade-left" data-aos-duration="500">
+            <div class="card mb-3 h-100">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/img/1.jpg"
+                    class="img-fluid rounded-start img-card"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title text-c-primary">
+                      Masjid At - Thohir Depok
+                    </h3>
+                    <p class="card-text">
+                      Masjid At-Thohir diresmikan Presiden Joko Widodo (Jokowi)
+                      pada Rabu 9 Maret 2022. Masjid yang berlokasi di Jalan Hj.
+                      Mohammad Thohir, kawasan Kompleks Podomoro, Tapos, kota
+                      Depok merupakan dedikasi Menteri BUMN Erick Thohir untuk
+                      sang ayah.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                    <a
+                      href="frontend/data_masjid.html"
+                      class="btn bg-color-primary text-white text-decoration-none"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-color-primary p-2 mt-5 text-center">
+      <small class="text-white"
+        >&#169; Copyright by Data Directory Masjid Kota Depok - 2024.</small
+      >
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos js js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

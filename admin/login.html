@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Log In Direktori Masjid</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <style>
+    body {
+      background: url('../assets/img/BG LOGIN.jpg!d') center center/cover no-repeat fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0); /* Add a semi-transparent white background to the login box */
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="#" class="h1"><b>Direktori<b>Masjid</a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Masuk Untuk Lanjutkan /Daftar Jika Belum Punya Akun</p>
+
+      <form action="beranda.html" method="post" onsubmit="checkLogin()"> 
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block" onclick="checkLogin()">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+      <table class="table mt-3">
+        <tr>
+          <th colspan="2" class="text-center">Demo Account</th>
+        </tr>
+        <tr class="text-center">
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+        <tr class="text-center">
+          <td>admin@gmail.com</td>
+          <td>admin123</td>
+        </tr>
+      </table>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+      <p class="mb-0">
+        <a href="register.html" class="text-center">Belum Punya Akun? Daftar Di sini</a>
+      </p>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script>
+  function checkLogin() {
+    // Ambil nilai dari input email dan password
+    var email = document.querySelector('input[type="email"]');
+    var password = document.querySelector('input[type="password"]').value;
+  
+    // DATA VALID
+    if (      
+      (email.value === "indika@gmail.com" && password === "indikaputra12") ||
+      (email.value === "axso123@gmail.com" && password === "axso123") ||
+      (email.value === "azkiya@gmail.com" && password === "azkiya123") || // Add a semicolon here
+      (email.value === "Fadya@gmail.com" && password === "Fadya12")
+      (email.value === "admin@gmail.com" && password === "admin123")
+    ) {
+      // Continue with the code for valid data
+    } else {
+      alert("Cek Kembali Gmail dan password anda!");
+      // Clear input fields
+      email.value = "";
+      document.querySelector('input[type="password"]').value = "";
+      // Refocus on the email field
+      email.focus();
+    }
+  }
+  
+</script>
+
+</body>
+</html>
